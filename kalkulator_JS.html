@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+    <script>
+        function oblicz() {
+            var liczba1 = parseFloat(document.getElementById('liczba1').value);
+            var liczba2 = parseFloat(document.getElementById('liczba2').value);
+            var operator = document.getElementById('operator').value;
+            var wynik = 0;
+
+            switch(operator) {
+                case '+':
+                    wynik = liczba1 + liczba2;
+                    break;
+                case '-':
+                    wynik = liczba1 - liczba2;
+                    break;
+                case '*':
+                    wynik = liczba1 * liczba2;
+                    break;
+                case '/':
+                    if (liczba2 !== 0) {
+                        wynik = liczba1 / liczba2;
+                    } else {
+                        alert('Błąd: Nie można dzielić przez zero!');
+                    }
+                    break;
+                default:
+                    alert('Błąd: Nieznany operator!');
+                    break;
+            }
+
+            document.getElementById('wynik').innerHTML = 'Wynik: ' + wynik;
+        }
+    </script>
+</head>
+<body>
+    <h2>Kalkulator</h2>
+    <input type="number" id="liczba1" placeholder="Liczba 1" required>
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" id="liczba2" placeholder="Liczba 2" required>
+    <button onclick="oblicz()">Oblicz</button>
+    <h3 id="wynik"></h3>
+</body>
+</html>
