@@ -1,0 +1,491 @@
+/* Komentarz */
+
+/* Selektor elementu */
+p {
+    color: blue;
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  /* Selektor klasy */
+  .example {
+    background-color: yellow;
+    padding: 5px;
+  }
+  
+  /* Selektor ID */
+  #header {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* Selektor potomny */
+  ul li {
+    list-style-type: circle;
+  }
+  
+  /* Pseudoklasy */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  input:focus {
+    background-color: lightgray;
+  }
+  
+  /* Pseudoelementy */
+  p::first-line {
+    font-weight: bold;
+  }
+  
+  p::before {
+    content: "Przed: ";
+  }
+  
+  /* Jednostki */
+  div {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 5%;
+  }
+  
+  /* Kaskadowość */
+  body div {
+    background-color: gray;
+  }
+  
+  /* Media queries */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Animacje */
+  @keyframes example {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Importowanie innych plików CSS */
+  @import url("styles.css");
+  
+  /* Zmienne */
+  :root {
+    --primary-color: blue;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+  }
+  
+  /* Grid */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  /* Flexbox */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Box model */
+  .box {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+  
+  /* Gradienty */
+  .background {
+    background: linear-gradient(to bottom, red, yellow);
+  }
+  
+  /* Shadow */
+  .box {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Przezroczystość */
+  .element {
+    opacity: 0.5;
+  }
+  
+  /* Transformacje */
+  .element {
+    transform: rotate(45deg);
+  }
+  
+  /* Tranzycje */
+  .element {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Filtry */
+  img {
+    filter: grayscale(100%);
+  }
+/* Właściwości czcionek */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Właściwości tła */
+  body {
+    background-color: #f5f5f5;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Właściwości ramki */
+  .box {
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  /* Właściwości float */
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+  
+  /* Właściwości tabel */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  /* Właściwości linków */
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Właściwości list */
+  ul {
+    list-style-type: disc;
+  }
+  
+  ol {
+    list-style-type: decimal;
+  }
+  
+  /* Właściwości animacji */
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .element {
+    animation: slide 1s ease-in-out infinite alternate;
+  }
+  
+  /* Właściwości wielokolumnowe */
+  .column-container {
+    column-count: 3;
+    column-gap: 20px;
+  }
+  
+  .column-item {
+    break-inside: avoid;
+  }
+  
+  /* Właściwości formularzy */
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Właściwości responsywne */
+  @media (max-width: 768px) {
+    .column-container {
+      column-count: 2;
+    }
+    
+    /* Inne zmiany dla urządzeń mobilnych */
+  }
+  
+  /* Właściwości kolorów */
+  .color-example {
+    color: #ff0000; /* Kolor w formacie szesnastkowym */
+    background-color: rgb(255, 0, 0); /* Kolor w formacie RGB */
+  }
+  
+/* Właściwości pozycjonowania */
+.positioned-element {
+    position: relative;
+    top: 50px;
+    left: 20px;
+    z-index: 1;
+  }
+  
+  /* Właściwości przejrzystości */
+  .transparent-element {
+    opacity: 0.5;
+  }
+  
+  /* Właściwości przekształceń */
+  .transformed-element {
+    transform: rotate(45deg);
+  }
+  
+  /* Właściwości filtrów */
+  .filtered-element {
+    filter: grayscale(100%);
+  }
+  
+  /* Właściwości cieniowania */
+  .shadow-element {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Właściwości przekształcania tekstów */
+  .text-transformed {
+    text-transform: uppercase;
+  }
+  
+  /* Właściwości obszaru tekstowego */
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Właściwości nawigacji */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Właściwości responsywności obrazów */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Właściwości pseudoelementów */
+  .element::before {
+    content: "Przed";
+    font-weight: bold;
+  }
+  
+  .element::after {
+    content: "Po";
+    font-style: italic;
+  }
+  
+  /* Właściwości drukowania */
+  @media print {
+    .no-print {
+      display: none;
+    }
+  }
+  
+  /* Właściwości animacji keyframes */
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .element {
+    animation: slide 1s ease-in-out infinite alternate;
+  }
+/* Właściwości list */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  /* Właściwości opisywania obrazów */
+  figcaption {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* Właściwości czcionki */
+  h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Właściwości wielowierszowych tekstu */
+  .text-container {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  /* Właściwości przesunięcia */
+  .element {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 40px;
+  }
+  
+  /* Właściwości przekształcania rozmiaru */
+  .resizable-element {
+    width: 200px;
+    height: 150px;
+    resize: both;
+    overflow: auto;
+  }
+  
+  /* Właściwości perspektywy 3D */
+  .container {
+    perspective: 1000px;
+  }
+  
+  .element {
+    transform: rotateY(45deg);
+  }
+  
+  /* Właściwości wydruku */
+  @media print {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+  
+  /* Właściwości gradientów */
+  .gradient-background {
+    background: linear-gradient(to right, red, blue);
+  }
+  
+  .gradient-text {
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Właściwości obrazków tła */
+  .background-image {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  /* Właściwości pseudoklas */
+  input:disabled {
+    opacity: 0.5;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  /* Właściwości tabeli */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  
+  /* Właściwości interaktywnych */
+  .button {
+    cursor: pointer;
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+  }
+  
+  /* Właściwości flexbox */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .item {
+    flex: 1;
+  }
+  
+  /* Właściwości grid */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .item {
+    grid-column: span 2;
+  }
+        
